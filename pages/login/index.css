@@ -75,14 +75,18 @@ top: 100px;
 }
 
 .modal{
-    height: 500px;
-    width: 800px;
+    height: 300px;
+    width: 400px;
     background-color: var(--color-grey-5);
     color: var(--color-grey-1);
     border-radius: 16px;
     padding: 24px;
     position: fixed;
-    
+}
+.sect-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .modal input{
@@ -91,14 +95,12 @@ top: 100px;
     height: 40px;
 }
 .modal label{
-    color: white;
+    color: var(--color-grey-2);
     font-weight: 600;
-    position: relative;
-    bottom: 40px;
-    left: 250px;
+
 }
 .modal > button{
-    color: var(--color-grey-6);
+    color: var(--color-grey-2);
 }
 .receber-email{
     border-radius: 8px;
@@ -108,19 +110,16 @@ top: 100px;
     color: var(--color-grey-6);
     background-color: var(--color-grey-2);
     cursor: pointer;
-    position: relative;
-    top: 60px;
-    right: 170px;
+    margin-top: 10px;
+
 }
 .top-modal{
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--color-grey-2);
 }
 .top-modal h3{
-    position: relative;
-    left: 280px;
-    top: 40px;
+color: var(--color-grey-2);
 }
 .close-modal{
     height: 20px;
@@ -129,10 +128,14 @@ top: 100px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: var(--color-grey-6);
+    color: var(--color-grey-2);
 }
 .bg-black {
     background-color: rgba(0,0,0, 0.441);
+    height: 500px;
+    width: 800px;
+    position: fixed;
+    border-radius: 16px;
   }
   .width-screen {
     width: 60vw;

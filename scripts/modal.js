@@ -14,7 +14,8 @@
     </section>
     */
     function createModal(){
-        const seclModal = document.createElement('section')
+        const sectModal = document.createElement('section')
+        const campModal = document.createElement('div')
         const divModal = document.createElement('div')
         const h3Modal = document.createElement('h3')
         const closeModal = document.createElement('button')
@@ -25,8 +26,10 @@
         const recuperaModal = document.createElement('button')
     
         //class
-        seclModal.classList = 'modal bg-black '
-        seclModal.id = 'modal_container'
+        sectModal.classList = 'bg-black sect-modal'
+        sectModal.id = 'modal_container'
+
+        campModal.classList = 'modal'
     
         divModal.classList.add('top-modal')
     
@@ -49,9 +52,10 @@
     
         divModal.append(h3Modal, closeModal)
         formModal.append(labelModal, inputModal, outroModal, recuperaModal)
-        seclModal.append(divModal, formModal)
+        campModal.append(divModal, formModal)
+        sectModal.appendChild(campModal)
         
-        return seclModal
+        return sectModal
     }
     
     function showModal(){
@@ -69,9 +73,9 @@
     
     function closeModal(){
         const modalClose = document.getElementById('close_modal')
-        const seclModal = document.getElementById('modal_container')
+        const campModal = document.getElementById('modal_container')
         modalClose.addEventListener('click', () =>{
-            seclModal.remove()
+            campModal.remove()
         })
     }
     showModal()

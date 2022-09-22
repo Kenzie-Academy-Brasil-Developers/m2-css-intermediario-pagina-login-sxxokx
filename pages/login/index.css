@@ -1,1 +1,104 @@
 /* Desenvolva seu código aqui... */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.main-page{
+    background-color: #ADB5BD;
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border-radius: 16px;
+    margin-top: 16px;
+
+}
+.main-page .inform{
+    padding: 24px;
+    max-width: 400px;
+    
+}
+.main-page .inform h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-page .inform p{
+position: relative;
+top: 100px;
+}
+.main-page .login{
+    background-color: #F8F9FA;  
+    border-radius: 0 16px 16px 0;
+    padding: 24px;
+    width: 400px;
+}
+.login h3{
+    text-align: center;
+}
+.form-login{
+    display: grid;
+    position: relative;
+    top: 100px;
+}
+.esqueci-senha{
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.entrar-conta{
+    border-radius: 8px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    color: var(--color-grey-6);
+    background-color: var(--color-grey-2);
+    cursor: pointer;
+    position: relative;
+    top: 150px;
+}
+.form-login input{
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+.modal{
+    height: 400px;
+    width: 300px;
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-1);
+    border-radius: 16px;
+    padding: 24px;
+
+}
+.modal input{
+    border-radius: 4px;
+    padding-left: 5px;
+}
+.receber-email{
+    border-radius: 8px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    color: var(--color-grey-6);
+    background-color: var(--color-grey-2);
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+}
+.top-modal{
+    display: flex;
+    justify-content: space-between;
+}
+.close-modal{
+    height: 20px;
+    width: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-grey-1);
+}
